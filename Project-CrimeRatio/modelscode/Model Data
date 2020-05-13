@@ -1,0 +1,196 @@
+Trying with multinomial Logistic regression
+testing size is 10%
+
+Accuracy-21.3058419244%
+mse=16.3058419244
+------------------------------------------
+Trying with Pca and Multinomial Regression
+testing size is 10%
+
+relativity of each feature with the intensity
+[  6.93486516e+03   1.96710762e+03   4.10273828e+02   1.46382486e+02
+   7.22865584e+01   3.68145959e+01   2.16563420e+01   1.35594193e+01
+   8.88065621e+00   6.37346538e+00   4.53320408e+00   3.14138897e+00
+   2.34964056e+00   1.64504628e+00   1.43499419e+00   1.12830221e+00
+   8.01381464e-01   6.55277535e-01   5.44478302e-01   4.33695385e-01
+   3.64614170e-01   2.76118249e-01   2.09976210e-01   1.58608306e-01]
+
+
+features used=1
+Accuracy=16.1512027491
+mse=20.3951890034
+
+features used=2
+Accuracy=17.8694158076
+mse=18.058419244
+
+features used=3
+Accuracy=17.1821305842
+mse=17.4054982818
+
+features used=10
+Accuracy=19.587628866
+mse=15.7216494845
+
+features used=20
+Accuracy=21.3058419244
+mse=17.5257731959
+
+features used=24
+Accuracy=21.3058419244
+mse=16.4432989691
+------------------------------------------
+Trying with Pca and Multinomial Regression using pipeline
+testing size 25%
+
+Accuracy=18.9821182944
+mse=16.3548830812
+
+testing size 10%
+mse=16.5807560137
+Accuracy=19.9312714777
+------------------------------------------
+Trying with Linear Regression
+testing size 10%
+
+Accuracy=0.0
+mse=18.4397244858
+------------------------------------------
+Trying with Linear Regression and Polynomial features
+Testing size 10%
+
+mse=35.8273092756
+Accuracy=0.0%
+------------------------------------------
+Trying with Regression Tree
+Testing size 10%
+
+mse=14.943786696327996
+Accuracy=0.343642611684%
+-----------------------------------------
+trying with Boosting Regression Tree
+Testing size 10%
+
+mse=17.433684558771304
+Accuracy=0.0%
+-----------------------------------------
+trying with Ridge Regression 
+Testing size 10%
+
+alpha=0.01
+mse=18.439722059
+Accuracy=0.0%
+
+alpha=50
+Accuracy=0.0
+mse=18.4284593436
+-----------------------------------------
+trying with Lasso Regression 
+Testing size 10%
+
+alpha=0.01
+mse=18.4158044875
+Accuracy=0.0%
+
+alpha=100
+Accuracy=0.0
+mse=18.8312452248
+-----------------------------------------
+trying with Elastic Net Regression 
+Testing size 10%
+
+Accuracy=0.0
+mse=18.3114579593
+-----------------------------------------
+trying with Random Forest regression
+Testing Size 10%
+
+Accuracy=1.03092783505
+mse=8.74243986254
+-----------------------------------------
+trying with Random Forest regression
+Arabean Sea testing Size 30%
+
+rmse=3.567325623
+-----------------------------------------
+trying with Random Forest regression
+BOB testing Size 30%
+
+rmse=3.567325623
+
+----------------------------------------
+25% similar testing data in ADT
+mean absolute error
+18.8091883614
+mean squared error
+675.067595712
+root mean squared error
+25.9820629611
+----------------------------------------
+trying with Random Forest regression
+Testing Size 25% --> database_new25.dat
+
+n_estimators=100
+mae=10.9633580705
+mse=220.793186456
+rmse=14.859111227
+
+n_estimators=10
+mae=11.327458256
+mse=242.744434137
+rmse=15.5802578328
+
+n_estimators=90
+mae=10.9862914863
+mse=221.089907007
+rmse=14.8690923397
+
+n_estimators=80
+10.9910714286
+221.501065341
+14.8829118569
+
+n_estimators=50
+11.0797773655
+224.92690167
+14.9975631911
+--------------------------------------------
+trying with Random Forest regression
+Testing Size 25% --> database_new25.dat
+Testing set--> same as the one for which ADT was tested
+mae=14.0199596774
+mse=425.204183468
+rmse=20.6204797099
+------------------------------------------
+trying with Random Forest regression
+Testing Size 25% --> database_new25.dat
+
+n_estimators=100
+14.0199596774
+425.204183468
+20.6204797099
+------------------------------------------
+trying with Random Forest regression
+Testing Size 25% --> database_new25.dat
+n_estimators=100
+for intensity<35
+10.9633580705
+220.793186456
+14.859111227
+------------------------------------------
+trying with Random Forest regression
+Testing Size 25% --> database_new25.dat
+n_estimators=100
+for intensity>35
+10.9633580705
+220.793186456
+14.859111227
+--------------------------------------------
+trying with Random Forest regression
+Testing Size 25% --> database_new25.dat
+n_estimators=100
+for intensity>50
+10.9633580705
+220.793186456
+14.859111227
+
