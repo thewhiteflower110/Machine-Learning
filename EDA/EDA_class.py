@@ -60,5 +60,17 @@ class myeda:
 		y=range(0,len(df))
 		x=df
 		scatter(x,y)
-		
+	
+	def check_outliers(df):
+		print("If there are any values after the whiskers, then they are outliers")
+		columns = df.select_dtypes(include=np.number).columns
+		figure = plt.figure(figsize=(20, 10))
+		figure.add_subplot(1, len(columns), 1)
+		for index, col in enumerate(columns):
+			if index > 0:
+				figure.add_subplot(1, len(columns), index + 1)
+			sns.boxplot(y=col, data=df, boxprops={'facecolor': 'None'})
+		figure.tight_layout()
+		plt.show()
+	
 	
