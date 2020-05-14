@@ -1,0 +1,25 @@
+1.Make Class
+2. Make functions for
+	A. Data Cleaning:
+		1.Deal with missing values
+		2.Deal with noisy data
+		3.Deal with outliers
+		4.Deal with inconsistencies
+	B. Data Integration:
+		1. OCmbine training and dataset
+	C. Data Transformation:
+		1. Remove highly correlated columns
+		2. Normalize
+	D. Data Reduction:
+		1. Atribute Selection
+		2. Dimensionality Reduction
+		3. Neumerosity Reduction
+		4. Generalizatioin (Concept hierarchies)
+	E. EDA
+		1. UNivariate Analysis
+		2. Bivariate Analysis
+		3. Multivariate Analysis
+		4. TimeSeries EDA
+		5. Neumeric EDA
+		6. Categorical EDA
+		
