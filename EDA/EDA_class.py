@@ -34,6 +34,7 @@ class myeda:
 	def fill_missing_values_mean(df,axis=1):
 		mean_val=df.mean(axis=axis)
 		df.fill_na(mean_val)
+		return df
 	
 	def fill_missing_values_class(df,categorical_correlated_df):
 		#5. Use the attribute mean for all samples belonging to the same class as the given tuple:
@@ -53,6 +54,8 @@ class myeda:
 		for i in range[0,len(df)]:
 			if(df[i]==null):
 				df[i]=d[categorical_correlated_df[i]] 
+				
+		return df
 				
 	###DEAL WITH NOISY DATA
 	def check_smoothing(df):
@@ -93,4 +96,16 @@ class myeda:
 			print("No duplicated entries found")
 		#If any duplicate values, correct them
 		
-	def solve_duplicates
+	##DATA REDUCTION
+	def solve_duplicates(df):
+		df.drop_duplicates()
+		return df
+		
+	def solve_redundancy_numeric(df):
+		
+		
+	def dimensionality_reduction_wavelet_transform(df):
+	
+	def dimensionality_reduction_pca(df):
+	
+	def numerosity_reduction()
