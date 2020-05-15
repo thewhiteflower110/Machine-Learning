@@ -109,3 +109,11 @@ class myeda:
 	def dimensionality_reduction_pca(df):
 	
 	def numerosity_reduction()
+	
+	def chi_sq_test(x,y,features):
+		from sklearn.feature_selection import SelectKBest
+		from sklearn.feature_selection import chi2
+		print(x.shape)
+		x_new = SelectKBest(chi2, k=features).fit_transform(x, y)
+		print(x_new.shape)
+		return(x_new,y)
