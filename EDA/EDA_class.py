@@ -61,6 +61,7 @@ class myeda:
 		x=df
 		scatter(x,y)
 	
+	###Deal with Outliers
 	def check_outliers(df):
 		print("If there are any values after the whiskers, then they are outliers")
 		columns = df.select_dtypes(include=np.number).columns
@@ -73,4 +74,23 @@ class myeda:
 		figure.tight_layout()
 		plt.show()
 	
-	
+	###Entity Identification problem
+	def check_entity(df):
+		if df.dtype !='category':
+			print("Categorical Data is not allowed")
+		else:
+			print("Check the output list if, there are any issues in spelling of different classes in the dataframe")
+			l=pd.unique(df.to_numpy().ravel())
+			return l
+		
+	###Tuple Duplication problem
+	def check_duplicates(df):
+		#To check Duplicates
+		if len(df[df.duplicated()]) > 0:
+			print("No. of duplicated entries: ", len(df[df.duplicated()]))
+			print(df[df.duplicated(keep=False)].sort_values(by=list(df.columns)).head())
+		else:
+			print("No duplicated entries found")
+		#If any duplicate values, correct them
+		
+	def solve_duplicates
